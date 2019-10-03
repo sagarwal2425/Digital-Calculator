@@ -1,4 +1,4 @@
-# Auto Code Generator
+# Digital Calculator
 
 The goal of this project is to build a Graphical user interface for digital calculator using Java Swing.
 
