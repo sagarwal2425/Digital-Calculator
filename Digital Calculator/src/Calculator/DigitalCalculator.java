@@ -37,10 +37,10 @@ public class DigitalCalculator extends JFrame{
 		add.addActionListener(new ActionListener() {
 	        public void actionPerformed(ActionEvent e) {
 	           try {
-	        	   int num1 = Integer.parseInt(textField1.getText());
-	        	   int num2 = Integer.parseInt(textField2.getText());
-	        	   int ans = num1 + num2;
-	        	   textField3.setText(Integer.toString(ans));			        
+	        	   float num1 = Float.valueOf(textField1.getText());
+	        	   float num2 = Float.valueOf(textField2.getText());
+	        	   float ans = num1 + num2;
+	        	   textField3.setText(Float.toString(ans));			        
 		       } 
 	           catch (Exception e1) {
 	        	   if(!textField1.getText().equalsIgnoreCase("")) {
@@ -60,8 +60,7 @@ public class DigitalCalculator extends JFrame{
 	 		        	}
 	        	   }else {
 	        		   JOptionPane.showMessageDialog (null, "Error: 2nd Number is Empty");
-	        	   }		        	   
-        	       System.exit(0);
+	        	   }		     
 	           }}
 	    });
 		
@@ -71,10 +70,10 @@ public class DigitalCalculator extends JFrame{
 		sub.addActionListener(new ActionListener() {
 	        public void actionPerformed(ActionEvent e) {
 	           try {
-	        	   int num1 = Integer.parseInt(textField1.getText());
-	        	   int num2 = Integer.parseInt(textField2.getText());
-	        	   int ans = num1 - num2;
-	        	   textField3.setText(Integer.toString(ans));			        
+	        	   float num1 = Float.valueOf(textField1.getText());
+	        	   float num2 = Float.valueOf(textField2.getText());
+	        	   float ans = num1 - num2;
+	        	   textField3.setText(Float.toString(ans));				        
 		       } 
 	           catch (Exception e1) {
 	        	   if(!textField1.getText().equalsIgnoreCase("")) {
@@ -94,8 +93,7 @@ public class DigitalCalculator extends JFrame{
 	 		        	}
 	        	   }else {
 	        		   JOptionPane.showMessageDialog (null, "Error: 2nd Number is Empty");
-	        	   }		        	   
-        	       System.exit(0);
+	        	   }		     
 	           }}
 	    });
 		
@@ -105,10 +103,10 @@ public class DigitalCalculator extends JFrame{
 		multiply.addActionListener(new ActionListener() {
 	        public void actionPerformed(ActionEvent e) {
 	           try {
-	        	   int num1 = Integer.parseInt(textField1.getText());
-	        	   int num2 = Integer.parseInt(textField2.getText());
-	        	   int ans = num1 * num2;
-	        	   textField3.setText(Integer.toString(ans));			        
+	        	   float num1 = Float.valueOf(textField1.getText());
+	        	   float num2 = Float.valueOf(textField2.getText());
+	        	   float ans = num1 * num2;
+	        	   textField3.setText(Float.toString(ans));
 		       } 
 	           catch (Exception e1) {
 	        	   if(!textField1.getText().equalsIgnoreCase("")) {
@@ -128,8 +126,7 @@ public class DigitalCalculator extends JFrame{
 	 		        	}
 	        	   }else {
 	        		   JOptionPane.showMessageDialog (null, "Error: 2nd Number is Empty");
-	        	   }		        	   
-        	       System.exit(0);
+	        	   }		      
 	           }}
 	    });
 		
@@ -139,14 +136,13 @@ public class DigitalCalculator extends JFrame{
 		divide.addActionListener(new ActionListener() {
 	        public void actionPerformed(ActionEvent e) {
 	           try {
-	        	   int num1 = Integer.parseInt(textField1.getText());
-	        	   int num2 = Integer.parseInt(textField2.getText());
+	        	   float num1 = Float.valueOf(textField1.getText());
+	        	   float num2 = Float.valueOf(textField2.getText());
 	        	   if(num2 == 0) {
-	        		   JOptionPane.showMessageDialog (null, "Error: Division by Zero is not Allowed");
-	        		   System.exit(0);				           
-	        	   }   
-	        	   int ans = num1 / num2;
-	        	   textField3.setText(Integer.toString(ans));			        
+	        		   JOptionPane.showMessageDialog (null, "Error: Division by Zero is not Allowed");         
+	        	   }
+	        	   float ans = num1 / num2;
+	        	   textField3.setText(Float.toString(ans));				        
 		       } 
 	           catch (Exception e1) {
 	        	   if(!textField1.getText().equalsIgnoreCase("")) {
@@ -166,8 +162,7 @@ public class DigitalCalculator extends JFrame{
 	 		        	}
 	        	   }else {
 	        		   JOptionPane.showMessageDialog (null, "Error: 2nd Number is Empty");
-	        	   }		        	   
-        	       System.exit(0);
+	        	   }		      
 	           }}
 	    });
 		
