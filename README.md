@@ -1,6 +1,6 @@
 # Digital Calculator
 
-The goal of this project is to build a Graphical user interface for digital calculator using Java Swing.
+• Developed a Graphical User Interface for Digital Calculator using Java Swing and Java Abstract Window Toolkit.
 
 # Libraries used:
 • Java Swing
